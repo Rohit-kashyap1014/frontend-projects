@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+<title>javascript</title>
+
+</head>
+
+<body>
+
+<p>guess it if you can</p>
+
+<p><input type="text" id="guess"><button id="check guess">guess it</button></p>
+
+<script type="text/javascript">
+
+document.getElementById("check guess").onclick=function() {
+
+var randomnumber=Math.random();
+
+randomnumber=randomnumber *6;
+
+randomnumber=Math.floor(randomnumber);
+
+if((document.getElementById("guess").value)==randomnumber){
+
+alert("You got it!");
+
+}
+
+else{
+
+alert("Nope!the random number was" +randomnumber);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
